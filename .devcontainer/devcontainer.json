@@ -1,0 +1,19 @@
+{
+  "name": "候一会 WaitWise · 餐厅智能候位系统",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "WaitWise Web · 顾客端 / 商家端",
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
+    }
+  },
+  "postCreateCommand": "python -m pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-python.vscode-pylance", "esbenp.prettier-vscode"]
+    }
+  },
+  "remoteUser": "vscode"
+}

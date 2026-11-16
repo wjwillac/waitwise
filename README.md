@@ -4,7 +4,7 @@
 
 ## 1. 三分钟开始体验（GitHub Codespaces）
 
-1. 打开本仓库 `wjwillac/waitwise`，已经包含完整源代码和 Codespaces 配置。
+1. 打开已有的 GitHub 仓库 `https://github.com/wjwillac/waitwise`。
 2. 仓库主页点击 **Code → Codespaces → Create codespace on main**。
 3. Codespaces 根据 `.devcontainer/devcontainer.json` 创建 Python 开发容器，并自动执行 `pip install -r requirements.txt`。
 4. 打开 Codespaces 的终端，输入：
@@ -19,7 +19,7 @@
    - API 文档：`/docs`
 6. 演示商家 PIN：`123456`。
 
-> 本仓库已配置 `.devcontainer/devcontainer.json`。在 GitHub Codespaces 中首次创建开发环境后，会自动执行依赖安装。
+> 本项目已上传到 GitHub 仓库，但需要在 Codespaces 中首次启动，容器才会实际安装依赖。官方 Codespaces 文档支持 `postCreateCommand` 和 `forwardPorts` 两项配置。
 
 如果你想从 Codespaces 终端上传自己的仓库，也可以安装 GitHub CLI 并执行 `git init / git add / git commit / git remote add / git push`；前提是你已有写入权限，并完成 GitHub 验证。
 
